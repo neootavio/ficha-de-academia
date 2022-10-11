@@ -23,6 +23,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+header{
+    position: fixed;
+    z-index: +1;
+}
+
 h1{
     color: greenyellow;
     font-size: medium;
@@ -49,7 +54,7 @@ p, li{
     font-size: small;
 }
 
-#usuario, #treino, #ficha,#exercicio,#serie, #tecnica, #repeticoes, li{
+#usuario, #treino, #ficha,#exercicio,#serie, #tecnica, #repeticoes,#grupoMuscular, li{
     color: orangered;
 }
 
@@ -71,14 +76,28 @@ footer>a:visited{
 }
 
 .container{
+    margin-top: 30px;
     position: relative;
     width: 100vw;
     height: 380px;
     display: grid;
-    grid-template-columns: 30% 25% 25% 25%;
+    grid-template-columns: 50%;
     border: 2px solid greenyellow;
 }
 
 div{
     border: 1px solid black;
+}
+
+.sideBar1{
+    width: auto;
+    position: fixed;
+    left: 80%;
+}
+
+.sideBar2{
+    width: auto;
+    position: fixed;
+    left: 80%;
+    top: 200px;
 }
