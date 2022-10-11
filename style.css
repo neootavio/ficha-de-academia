@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Início da media query*/
+@media (max-width: 600px)
+{
+    h1{
+        color: crimson;
+        font-size: medium;
+    }
+    
+    h2{
+        color: brown;
+        font-size: small;
+    }
+    
+    h3{
+        color: brown;
+        font-size: smaller;
+    }
+    
+    ul{
+        list-style-type: none;
+    }
+    
+    p, li{
+        color: aliceblue;
+        text-align: justify;
+        font-size: small;
+    }
+    
+    #usuario, #treino, #ficha,#serie, #tecnica, #repeticoes, li{
+        color: yellow;
+    }
+    
+    
+    footer>a{
+        font-size: x-small;
+        text-decoration: none;
+        color: white;
+        background-color: red;
+        width: 100vw;
+        height: 10px;
+        text-align: center;
+        position: fixed;
+        top: 0;
+    }
+    
+    footer>a:visited{
+        color: orangered;
+    }
+    
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        grid-template-columns: 30% 70%;
+        border: 2px solid red;
+    }
+    
+    div{
+        border: 1px solid black;
+    }
+    
+}
+/*Fim da media query*/
+
+h1{
+    color: greenyellow;
+    font-size: medium;
+  
+}
+
+h2{
+    color: greenyellow;
+    font-size: small;
+}
+
+h3{
+    color: orange;
+    font-size: smaller;
+}
+
+ul{
+    list-style-type: none;
+}
+
+p, li{
+    color: aliceblue;
+    text-align: justify;
+    font-size: small;
+}
+
+#usuario, #treino, #ficha,#serie, #tecnica, #repeticoes, li{
+    color: orangered;
+}
+
+
+footer>a{
+    font-size: x-small;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    width: 100vw;
+    height: 10px;
+    text-align: center;
+    position: fixed;
+    top: 97%;
+}
+
+footer>a:visited{
+    color: orangered;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 380px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    border: 2px solid greenyellow;
+}
+
+div{
+    border: 1px solid black;
+}
