@@ -1,20 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treino de musculação</title>
+    <title>Tabela de treino</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: rgba(0, 0, 0, 0.5);">
-    <div class="container">
-        <header>
-            <h1>Ficha de treino <strong>letra</strong></h1>
-        </header>
 
+<body>
+    <header>
+        <h1>Ficha de treino de <strong id="usuario">usuário</strong></h1>
+    </header>
+
+    <div class="container">
+
+        <h2>Grupo Muscular</h2>
+        <input type="text">
+
+        <h2>Exercício</h2>
+        <input type="checkbox">
+
+
+
+
+        <table class="ficha" id="tabela">
+            <caption>Ficha de treino <strong id="letra">X</strong></caption>
+            <tr>
+                <th id="grupoMuscular" rowspan="10">Grupo Muscular</td>    
+                <th>Exercício</th>
+                <th>Série</th>
+                <th></th>
+                <th>Rep</th>
+                <th>Carga</th>
+            </tr>
+            <tr>
+                <td class="exercicio">Exercício 1</td>
+                <td class="serie">3</td>
+                <td>x</td>
+                <td class="serie">10</td>
+                <td class="serie">10 kg</td>
+            </tr>
+            <tr>
+                <td class="exercicio">Exercício 2</td>
+                <td class="serie">3</td>
+                <td>x</td>
+                <td class="serie">10</td>
+                <td class="serie">10 kg</td>
+            </tr>
+        </table>
 
 
     </div>
     
 </body>
+
 </html>

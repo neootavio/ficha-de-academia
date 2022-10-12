@@ -97,9 +97,7 @@ footer>a:visited{
     margin-top: auto;
     position: relative;
     width: 100vw;
-    height: 380px;
     display: grid;
-    grid-template-columns: 50%;
     border: 2px solid var(--pink);
 }
 
