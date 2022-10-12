@@ -5,67 +5,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Treino de musculação</title>
+    <title>Tabela de treino</title>
     <link rel="stylesheet" href="style.css">
-</head>h2
+</head>
 
-<body style="background-color: black;">
+<body>
     <header>
         <h1>Ficha de treino de <strong id="usuario">usuário</strong></h1>
     </header>
 
     <div class="container">
 
-        <div class="ficha">
-            <h2>Treino <strong id="treino">A</strong></h2>
-            <h2 id="grupoMuscular">Grupo Muscular</h2>
-            <h3>Exercício / S x R  / Técnica Avançada</h3>
-            <ul>
-                <li><hr><p><strong id="exercicio">Supino</strong> / <strong id="serie">3</strong> x <strong id="repeticoes">10</strong> / <strong id="tecnica"> Drop-Set 3x</strong></p></li>
+        <table class="ficha" id="tabela">
+            <caption>Ficha de treino <strong id="letra">X</strong></caption>
+            <tr>
+                <th id="grupoMuscular" rowspan="10">Grupo Muscular</td>    
+                <th>Exercício</th>
+                <th>Série</th>
+                <th></th>
+                <th>Rep</th>
+                <th>Carga</th>
+            </tr>
+            <tr>
+                <td class="exercicio">Exercício 1</td>
+                <td class="serie">3</td>
+                <td>x</td>
+                <td class="serie">10</td>
+                <td class="serie">10 kg</td>
+            </tr>
+            <tr>
+                <td class="exercicio">Exercício 2</td>
+                <td class="serie">3</td>
+                <td>x</td>
+                <td class="serie">10</td>
+                <td class="serie">10 kg</td>
+            </tr>
+        </table>
 
-                <li><hr><p><strong id="exercicio">Peck Deck</strong> / <strong id="serie">3</strong> x <strong id="repeticoes">10</strong> / <strong id="tecnica"> Drop-Set 3x</strong></p></li>
+        <aside>
+            <!--Salva os valores no localStorage-->
+            <div class="menuInf">
+                <h2>Criar Treinos</h2>
+                <button>A</button>
+                <button>B</button>
+                <button>C</button>
+                <button>D</button>
+                <button>E</button>
+            </div>
 
-                <li><hr><p><strong id="exercicio">Supra</strong> / <strong id="serie">3</strong> x <strong id="repeticoes">10</strong> / <strong id="tecnica"> Drop-Set 3x</strong></p></li>
-
-                <li><hr><p><strong id="exercicio">Infra</strong> / <strong id="serie">3</strong> x <strong id="repeticoes">10</strong> / <strong id="tecnica"> Drop-Set 3x</strong></p></li>
-            </ul>
-        </div>
-       
-<!--Inicio das side bars-->
-
-        <div class="sideBar1">
-            <h2>Musculação</h2>
-            <ul>
-                <li>Seg - <strong>A</strong></li>
-                <li>Ter - <strong>B</strong></li>
-                <li>Qua - <strong>C</strong></li>
-                <li>Qui - <strong>D</strong></li>
-                <li>Sex - <strong>E</strong></li>
-                <li>Sab - <strong>A</strong></li>
-                <li>Dom - <strong>B</strong></li>
-            </ul>
-
-        </div>
-
-        <div class="sideBar2">
-            <h2>Aeróbicos</h2>
-            <ul>
-                <li>Seg - <strong>A</strong></li>
-                <li>Ter - <strong>B</strong></li>
-                <li>Qua - <strong>C</strong></li>
-                <li>Qui - <strong>D</strong></li>
-                <li>Sex - <strong>E</strong></li>
-                <li>Sab - <strong>A</strong></li>
-                <li>Dom - <strong>B</strong></li>
-            </ul>
-        </div>
+            <!--Manipula o DOM tabela com o treino escolhido-->
+            <div class="info">
+                <h2>Musculação</h2>
+                <ul>
+                    <li>Seg - <strong>A</strong></li>
+                    <li>Ter - <strong>B</strong></li>
+                    <li>Qua - <strong>C</strong></li>
+                    <li>Qui - <strong>D</strong></li>
+                    <li>Sex - <strong>E</strong></li>
+                    <li>Sab - <strong>A</strong></li>
+                    <li>Dom - <strong>B</strong></li>
+                </ul>
+                <button>Editar</button>
+            </div>
+        </aside>
 
     </div>
-
-    <footer>
-        <a href="#">Desenvolvido por &#174Team Strategy Apps 2022</a>
-    </footer>
-
+    
 </body>
 
 </html>
