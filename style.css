@@ -123,13 +123,18 @@ div{
 }
 
 .menuInf>button{
-    margin: auto;
-    width: 10%;
-    height: 20px;
+    margin: 2px;
+    width: 25%;
+    height: 25%;
     border: none;
     background-color: var(--pink);
     color: var(--white);
     cursor: pointer;
+}
+
+.menuInf>button>a{
+    text-decoration: none;
+    background-color: var(--pink);
 }
 
 aside{
