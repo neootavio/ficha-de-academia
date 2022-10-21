@@ -11,21 +11,38 @@
 
 <body>
     <header>
-        <h1>Ficha de treino de <strong id="usuario">usuário</strong></h1>
+        <h1>Criar ficha de treino de <strong id="usuario">usuário</strong></h1>
     </header>
 
-    <div class="container">
+    <div class="containerFicha">
 
-        <h2>Grupo Muscular</h2>
-        <input type="text">
+        
+        <h2>Peito</h2><br>
+        <div>
+            <label>Exercício<input type="text"></label>
+            <label>Série<input class="numero" type="number"></label>
+            <label>Repetições<input class="numero" type="number"></label>
+            <button>Incluir</button>
+        </div>
+        
+        <br>
+        
+        
 
-        <h2>Exercício</h2>
-        <input type="checkbox">
+        
+    </div>
+
+
+        
 
 
 
 
-        <table class="ficha" id="tabela">
+
+
+
+
+        <table class="ficha " id="tabela">
             <caption>Ficha de treino <strong id="letra">X</strong></caption>
             <tr>
                 <th id="grupoMuscular" rowspan="10">Grupo Muscular</td>    
@@ -35,6 +52,8 @@
                 <th>Rep</th>
                 <th>Carga</th>
             </tr>
+
+            <!--Incluir trecho abaixo via JS-->
             <tr>
                 <td class="exercicio">Exercício 1</td>
                 <td class="serie">3</td>
@@ -52,7 +71,7 @@
         </table>
 
 
-    </div>
+    
     
 </body>
 

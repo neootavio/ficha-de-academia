@@ -151,3 +151,17 @@ button{
     background-color: var(--pink);
     color: var(--white);
 }
+
+.esconder{
+    display: none;
+    /*para mostrar utilize JS remove class*/
+}
+
+.containerFicha{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.numero{
+    width: 40px;
+}
