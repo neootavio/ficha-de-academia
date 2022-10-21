@@ -16,24 +16,52 @@
 
     <div class="containerFicha">
 
-        
-        <h2>Peito</h2><br>
-        <div>
-            <label>Exercício<input type="text"></label>
+        <fieldset>
+            <legend>Exercício</legend>
+
+
+            <select name="exercícios">
+
+                <optgroup label="Peito">
+                    <option value="Supino Reto">Supino Reto</option>
+                    <option value="Supino Inclinado">Supino Inclinado</option>
+                    <option value="Supino Declinado">Supino Declinado</option>
+                    <option value="Crucifixo">Crucifixo</option>
+                    <option value="Voador">Voador</option>
+                    <option value="Cross-over">Cross-over</option>
+                </optgroup>
+
+                <optgroup label="Costas">
+                    <option value="pr">Puxador</option>
+                    <option value="pr">Remada Baixa</option>
+                    <option value="pr">Remada Cavalinho</option>
+                    <option value="pr">Remada Unilateral</option>
+                    <option value="pr">Fly inverso</option>
+                    <option value="pr">Crucifixo Invertido</option>
+                    <option value="pr">Pullover</option>
+                    <option value="pr">Barra Fixa</option>
+                    <option value="pr">Remada Curvada</option>
+                    <option value="pr">Polia Alta</option>
+                </optgroup>
+
+                <label>Série<input class="numero" type="number"></label>
+                <label>Repetições<input class="numero" type="number"></label>
+                <button>Incluir</button>
+
+            </select>
+
+            <label>Outro<input type="text"></label>
             <label>Série<input class="numero" type="number"></label>
             <label>Repetições<input class="numero" type="number"></label>
             <button>Incluir</button>
-        </div>
-        
-        <br>
-        
-        
 
-        
+        </fieldset>
+
+
+
     </div>
 
 
-        
 
 
 
@@ -42,37 +70,38 @@
 
 
 
-        <table class="ficha " id="tabela">
-            <caption>Ficha de treino <strong id="letra">X</strong></caption>
-            <tr>
-                <th id="grupoMuscular" rowspan="10">Grupo Muscular</td>    
-                <th>Exercício</th>
-                <th>Série</th>
-                <th></th>
-                <th>Rep</th>
-                <th>Carga</th>
-            </tr>
 
-            <!--Incluir trecho abaixo via JS-->
-            <tr>
-                <td class="exercicio">Exercício 1</td>
-                <td class="serie">3</td>
-                <td>x</td>
-                <td class="serie">10</td>
-                <td class="serie">10 kg</td>
-            </tr>
-            <tr>
-                <td class="exercicio">Exercício 2</td>
-                <td class="serie">3</td>
-                <td>x</td>
-                <td class="serie">10</td>
-                <td class="serie">10 kg</td>
-            </tr>
-        </table>
+    <table class="ficha " id="tabela">
+        <caption>Ficha de treino <strong id="letra">X</strong></caption>
+        <tr>
+            <th id="grupoMuscular" rowspan="10">Grupo Muscular</td>
+            <th>Exercício</th>
+            <th>Série</th>
+            <th></th>
+            <th>Rep</th>
+            <th>Carga</th>
+        </tr>
+
+        <!--Incluir trecho abaixo via JS-->
+        <tr>
+            <td class="exercicio">Exercício 1</td>
+            <td class="serie">3</td>
+            <td>x</td>
+            <td class="serie">10</td>
+            <td class="serie">10 kg</td>
+        </tr>
+        <tr>
+            <td class="exercicio">Exercício 2</td>
+            <td class="serie">3</td>
+            <td>x</td>
+            <td class="serie">10</td>
+            <td class="serie">10 kg</td>
+        </tr>
+    </table>
 
 
-    
-    
+
+
 </body>
 
 </html>
